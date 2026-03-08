@@ -1,6 +1,8 @@
 # 🛠️ All in One
 
-<img width="450" height="450" alt="new" src="https://github.com/user-attachments/assets/0f681fbf-32b3-426f-ba64-478d4197207b" />
+<p align="center">
+  <img width="300" height="300" alt="new" src="https://github.com/user-attachments/assets/0f681fbf-32b3-426f-ba64-478d4197207b" />
+</p>
 
 **All in One** is a powerful desktop application that combines multiple tools, games, PDF utilities, and AI agents in a modern GUI with icons and animations. Every user action is logged in the **History** section.
 
