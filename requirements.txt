@@ -1,0 +1,15 @@
+PySide6
+PyPDF2
+ollama
+ddgs
+pillow
+pysrt
+webvtt
+docx
+python-docx
+arabic_reshaper
+reportlab
+python-bidi
+pathlib
+dotenv
+pikepdf
