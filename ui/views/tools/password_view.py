@@ -8,7 +8,7 @@ from PySide6.QtCore import Qt
 from core.tools.password.generator import PasswordGenerator
 import sys
 
-ICON_DIR = Path(__file__).resolve().parent.parent.parent / "icons"
+ICON_DIR = Path(__file__).resolve().parent.parent.parent / "icons" / "passgen"
 
 class PasswordGeneratorView(QWidget):
     def __init__(self, parent=None):

@@ -8,7 +8,7 @@ from PySide6.QtGui import QIcon, QPixmap
 
 from core.tools.organizer.logic import organize_files, clean_empty_dirs
 
-ICON_DIR = Path(__file__).resolve().parent.parent.parent / "icons"
+ICON_DIR = Path(__file__).resolve().parent.parent.parent / "icons" / "organizer"
 
 @dataclass
 class OrganizerState:
